@@ -7,6 +7,7 @@ module.exports = function createUpdatedCollection(collectionA, objectB) {
   for(let j=0;j<collectionA.length;j++)
       if(arr[i]==collectionA[j].key)
         {var k=collectionA[j].count;
-          collectionA[j].count=k-parseInt(k/3);}
+          collectionA[j].count=k-parseInt(k/3);
+        }
     return collectionA; 
 }
